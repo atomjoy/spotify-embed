@@ -130,3 +130,7 @@ Embeds Spotify for Developers, you can create a simple Embed by copying a few li
 
 </html>
 ```
+
+## Page
+
+<img src="https://raw.githubusercontent.com/atomjoy/spotify-embed/refs/heads/main/spotify-embed.png" width="100%">
