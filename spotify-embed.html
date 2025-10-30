@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Spotify Embed Widget (Player, Podcast)</title>
+    <title>Spotify widget</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bitcount+Grid+Single:wght@100..900&display=swap" rel="stylesheet">
@@ -33,12 +33,14 @@
                 // uri: 'spotify:playlist:37i9dQZEVXbMZ5PAcNTDXd',
             }
 
+            // EmbedController
             const callback = (EmbedController) => {
                 player = EmbedController
+                player.addListener("playback_started", handlePlaybackStart)
                 player.addListener('playback_update', handlePlaybackUpdate)
-                // EmbedController.loadUri(spotify[0])
-                // EmbedController.play()
-                // EmbedController.stop()
+                // player.loadUri(spotify[0])
+                // player.play()
+                // player.stop()
             }
 
             IFrameAPI.createController(element, options, callback)
@@ -55,6 +57,11 @@
         // Change uri
         function change(id) {
             player.loadUri(spotify[id])
+        }
+
+        const handlePlaybackStart = (e) => {
+            const { playingURI } = e.data
+            console.log(`The playback has started for: ${playingURI}`)
         }
 
         const handlePlaybackUpdate = (e) => {
