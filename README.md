@@ -40,12 +40,14 @@ Embeds Spotify for Developers, you can create a simple Embed by copying a few li
                 // uri: 'spotify:playlist:37i9dQZEVXbMZ5PAcNTDXd',
             }
 
+            // EmbedController
             const callback = (EmbedController) => {
                 player = EmbedController
+                player.addListener("playback_started", handlePlaybackStart)
                 player.addListener('playback_update', handlePlaybackUpdate)
-                // EmbedController.loadUri(spotify[0])
-                // EmbedController.play()
-                // EmbedController.stop()
+                // player.loadUri(spotify[0])
+                // player.play()
+                // player.stop()
             }
 
             IFrameAPI.createController(element, options, callback)
@@ -62,6 +64,11 @@ Embeds Spotify for Developers, you can create a simple Embed by copying a few li
         // Change uri
         function change(id) {
             player.loadUri(spotify[id])
+        }
+
+        const handlePlaybackStart = (e) => {
+            const { playingURI } = e.data
+            console.log(`The playback has started for: ${playingURI}`)
         }
 
         const handlePlaybackUpdate = (e) => {
