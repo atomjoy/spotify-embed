@@ -141,3 +141,17 @@ Embeds Spotify for Developers, you can create a simple Embed by copying a few li
 ## Page
 
 <img src="https://raw.githubusercontent.com/atomjoy/spotify-embed/refs/heads/main/spotify-embed.png" width="100%">
+
+### Tips
+
+```html
+<iframe width="100%" height="500" src="https://open.spotify.com/embed/artist/76QERaQEFTh2VKRUL7wz7m" title="Spotify player" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe width="100%" height="500" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7zqr9q1MPG7" title="Spotify player" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/ifVVc8xTas0?si=miy0-cSU6GTZB3ta" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/aK2pS-Chr-k?si=S3xnxel24wULlkwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/IQmLO9ryEIU?si=TlKOjbEyTglFu2Cd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/VRyTWvv2SgA?si=IcmN5RNmx86yYw_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<video autoplay="" loop="" muted="" playsinline="" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background-image: url('https://mayday.pl/wp-content/uploads/2024/09/time-table-bg.jpg'); background-color: transparent; background-repeat: no-repeat; background-size: cover; background-position: center center; left: 0px; top: 0px; height: 897.833px; width: 1596px"><source src="https://mayday.pl/wp-content/uploads/2024/09/2023-Mayday-Teaser-19.mp4" type="video/mp4" /></video>
+```
